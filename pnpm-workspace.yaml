@@ -1,3 +1,12 @@
+packages:
+  - frontend
+  - backend
+
+packageExtensions:
+  eslint-config-next@*:
+    dependencies:
+      next: 16.2.6
+
 ignoredBuiltDependencies:
   - sharp
   - unrs-resolver
