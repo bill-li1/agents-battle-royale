@@ -7,7 +7,7 @@ This repository is organized as a pnpm workspace.
 
 ## Getting Started
 
-Run the frontend development server from the repository root:
+Run both development servers from the repository root:
 
 ```bash
 pnpm dev
