@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "pnpm --filter @agents-battle-royale/frontend dev",
-    "build": "pnpm --filter @agents-battle-royale/frontend build",
+    "dev": "pnpm --parallel --filter @agents-battle-royale/backend --filter @agents-battle-royale/frontend dev",
+    "dev:backend": "pnpm --filter @agents-battle-royale/backend dev",
+    "dev:frontend": "pnpm --filter @agents-battle-royale/frontend dev",
+    "build": "pnpm --filter @agents-battle-royale/frontend build && pnpm --filter @agents-battle-royale/backend typecheck",
     "start": "pnpm --filter @agents-battle-royale/frontend start",
     "lint": "pnpm --filter @agents-battle-royale/frontend lint"
   }
